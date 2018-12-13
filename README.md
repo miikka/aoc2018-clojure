@@ -34,9 +34,9 @@ Clojure development is done via the REPL, so launch a REPL.
 lein rebl
 ```
 
-<small>That's right, it says *rebl*, not *repl*. The basic REPL is pretty plain,
+<sup>That's right, it says *rebl*, not *repl*. The basic REPL is pretty plain,
 so I've included [a nicer REPL](https://github.com/bhauman/rebel-readline). You
-can use `lein repl` if you want, though.</small>
+can use `lein repl` if you want, though.</sup>
 
 You should get a prompt that says `user=>`. That means that you're in the
 `user` namespace. Enter some Clojure such as `(println "Hello world!")` or `(+
