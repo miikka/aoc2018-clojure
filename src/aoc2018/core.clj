@@ -5,7 +5,9 @@
 (defn parse-int
   "Parse the string x as an integer."
   [x]
-  (Long/valueOf x))
+  (try
+    (Long/valueOf x)
+    (catch NumberFormatException _)))
 
 ;;;
 ;;; DAY 1
@@ -19,7 +21,7 @@
 (defn parse1
   "Parse input for day 1"
   [input]
-  (map parse-int (str/split-lines input)))
+  (keep parse-int (str/split-lines input)))
 
 (defn puzzle1-part1
   "Solution for https://adventofcode.com/2018/day/1 part 1"
@@ -71,7 +73,7 @@
 (defn parse3
   "Parse input for day 3"
   [input]
-  (map parse-claim (str/split-lines input)))
+  (keep parse-claim (str/split-lines input)))
 
 (defn puzzle3-part1
   "Solution for https://adventofcode.com/2018/day/3 part 1"
