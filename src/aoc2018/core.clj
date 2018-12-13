@@ -29,7 +29,8 @@
 
 (defn puzzle1-part2
   "Solution for https://adventofcode.com/2018/day/1 part 1"
-  [changes])
+  [changes]
+  changes)
 
 ;;;
 ;;; DAY 2
